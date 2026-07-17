@@ -10,79 +10,16 @@
 html,body{margin:0;padding:0;scroll-behavior:smooth;}
 body{font-family:'Jost', sans-serif;color:#4A342A;}
 
-/* ============ POPUP MODAL ============ */
-.overlay{
-  position:fixed;inset:0;
-  background:rgba(74,52,42,0.55);
-  display:flex;align-items:center;justify-content:center;
-  z-index:100;
-  animation:fadeIn 0.3s ease;
-}
+.overlay{position:fixed;inset:0;background:rgba(74,52,42,0.55);display:flex;align-items:center;justify-content:center;z-index:100;}
 .overlay.hidden{display:none;}
-@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-.popup{
-  background:#FBF3E7;
-  width:320px;
-  max-width:90vw;
-  padding:16px 16px 22px;
-  position:relative;
-  box-shadow:0 30px 60px rgba(0,0,0,0.35);
-  transform:rotate(-1deg);
-}
-.popup .tape{
-  position:absolute;top:-14px;left:50%;
-  transform:translateX(-50%) rotate(-3deg);
-  width:80px;height:30px;
-  background:rgba(230,210,195,0.7);
-}
-.popup .close-btn{
-  position:absolute;top:8px;right:8px;
-  width:28px;height:28px;border-radius:50%;
-  background:#4A342A;color:#FBF3E7;
-  border:none;font-size:1rem;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  line-height:1;
-}
-.popup .poster{
-  width:100%;
-  aspect-ratio:4/5;
-  background:
-    repeating-linear-gradient(45deg, rgba(201,124,86,0.12) 0 10px, rgba(156,107,122,0.12) 10px 20px),
-    #fffdfa;
-  border:1px dashed #C97C56;
-  display:flex;align-items:center;justify-content:center;
-  text-align:center;
-  font-size:0.75rem;
-  color:#9C6B7A;
-  padding:14px;
-  margin-bottom:14px;
-}
-.popup h3{
-  font-family:'Cormorant Garamond', serif;
-  font-size:1.2rem;
-  text-align:center;
-  margin:0 0 14px;
-}
-.popup a.register-btn{
-  display:block;
-  text-align:center;
-  background:#C97C56;
-  color:#FBF3E7;
-  padding:11px;
-  border-radius:3px;
-  text-decoration:none;
-  font-size:0.85rem;
-  letter-spacing:0.03em;
-}
+.popup{background:#FBF3E7;width:320px;max-width:90vw;padding:16px 16px 22px;position:relative;box-shadow:0 30px 60px rgba(0,0,0,0.35);transform:rotate(-1deg);}
+.popup .tape{position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(-3deg);width:80px;height:30px;background:rgba(230,210,195,0.7);}
+.popup .close-btn{position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;background:#4A342A;color:#FBF3E7;border:none;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;}
+.popup .poster{width:100%;aspect-ratio:4/5;background:repeating-linear-gradient(45deg, rgba(201,124,86,0.12) 0 10px, rgba(156,107,122,0.12) 10px 20px),#fffdfa;border:1px dashed #C97C56;display:flex;align-items:center;justify-content:center;text-align:center;font-size:0.75rem;color:#9C6B7A;padding:14px;margin-bottom:14px;}
+.popup h3{font-family:'Cormorant Garamond', serif;font-size:1.2rem;text-align:center;margin:0 0 14px;}
+.popup a.register-btn{display:block;text-align:center;background:#C97C56;color:#FBF3E7;padding:11px;border-radius:3px;text-decoration:none;font-size:0.85rem;letter-spacing:0.03em;}
 
-/* ============ HEADER ============ */
-header{
-  background:#FBF3E7;
-  padding:18px 40px;
-  display:flex;align-items:center;justify-content:space-between;
-  box-shadow:0 1px 0 rgba(74,52,42,0.08);
-  position:sticky;top:0;z-index:5;
-}
+header{background:#FBF3E7;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 0 rgba(74,52,42,0.08);position:sticky;top:0;z-index:5;}
 .logo-row{display:flex;align-items:center;gap:12px;}
 .logo-row img{height:44px;width:auto;}
 .logo-row .word{font-family:'Cairo',sans-serif;font-size:1.1rem;font-weight:700;color:#4A342A;}
@@ -90,16 +27,11 @@ nav{display:flex;gap:22px;flex-wrap:wrap;}
 nav a{text-decoration:none;color:#4A342A;font-size:0.82rem;letter-spacing:0.02em;opacity:0.8;}
 nav a:hover{opacity:1;}
 
-/* ============ SHARED ============ */
 .torn{position:relative;height:36px;margin-top:-1px;}
 .torn svg{display:block;width:100%;height:100%;}
-.section-title{
-  font-family:'Cormorant Garamond', serif;font-style:italic;font-weight:500;
-  font-size:1.7rem;text-align:center;margin:0 0 8px;
-}
+.section-title{font-family:'Cormorant Garamond', serif;font-style:italic;font-weight:500;font-size:1.7rem;text-align:center;margin:0 0 8px;}
 .section-sub{text-align:center;font-size:0.82rem;color:#8a6a63;margin-bottom:34px;}
 
-/* ============ HERO ============ */
 .hero{background:#FBF3E7;padding:70px 40px 60px;text-align:center;}
 .hero .eyebrow{font-family:'Caveat', cursive;font-size:1.3rem;color:#9C6B7A;display:inline-block;transform:rotate(-2deg);margin-bottom:4px;}
 .hero h1{font-family:'Cormorant Garamond', serif;font-weight:500;font-size:clamp(2rem,4vw,3rem);margin:0 0 6px;}
@@ -108,7 +40,6 @@ nav a:hover{opacity:1;}
 .hero .arabic{font-family:'Cairo', sans-serif;font-size:1.3rem;color:#9C6B7A;direction:rtl;margin-bottom:22px;}
 .cta-btn{display:inline-block;background:#C97C56;color:#FBF3E7;padding:12px 30px;border-radius:3px;font-size:0.85rem;letter-spacing:0.04em;text-decoration:none;}
 
-/* ============ NEW UPDATES ============ */
 .updates-section{background:#F3E4DD;padding:50px 40px 60px;}
 .updates-row{display:flex;gap:22px;max-width:980px;margin:0 auto;flex-wrap:wrap;justify-content:center;}
 .note-card{background:#fffdfa;padding:18px 20px 24px;width:260px;box-shadow:0 10px 20px rgba(90,60,50,0.14);position:relative;font-size:0.82rem;line-height:1.6;}
@@ -117,99 +48,134 @@ nav a:hover{opacity:1;}
 .note-card:nth-child(3){transform:rotate(-1deg);}
 .note-card .date{font-family:'Caveat', cursive;color:#9C6B7A;font-size:1.05rem;margin-bottom:6px;display:block;}
 .note-card .pin{position:absolute;top:-9px;left:20px;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%, #d98f7e, #a8564a);box-shadow:0 3px 5px rgba(0,0,0,0.25);}
+/* NAYA UPDATE YAHAN ADD KAREN: note-card jaisa ek naya block copy-paste karke date aur text badal dein */
 
-/* ============ LEARN ONLINE ============ */
 .learn-section{background:#FBF3E7;padding:56px 40px 70px;}
 .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:980px;margin:0 auto;}
 @media (max-width:820px){.cat-grid{grid-template-columns:repeat(2,1fr);}}
-.cat-card{background:#fffdfa;border:1px solid rgba(74,52,42,0.08);border-radius:6px;padding:26px 20px;text-align:center;box-shadow:0 6px 16px rgba(90,60,50,0.08);}
+.cat-card{background:#fffdfa;border:1px solid rgba(74,52,42,0.08);border-radius:6px;padding:26px 20px;text-align:center;box-shadow:0 6px 16px rgba(90,60,50,0.08);cursor:pointer;transition:box-shadow 0.2s;}
+.cat-card:hover{box-shadow:0 10px 22px rgba(90,60,50,0.15);}
+.cat-card.active{border-color:#C97C56;}
 .cat-card .motif{width:36px;height:36px;margin:0 auto 14px;}
 .cat-card h3{font-family:'Cormorant Garamond', serif;font-weight:600;font-size:1.05rem;margin:0 0 8px;}
 .cat-card p{font-size:0.78rem;color:#8a7570;line-height:1.5;margin:0 0 14px;min-height:38px;}
-.cat-card a.pill{display:inline-block;font-size:0.72rem;padding:7px 16px;border-radius:14px;border:1px solid #C97C56;color:#C97C56;text-decoration:none;letter-spacing:0.02em;}
+.cat-card .pill{display:inline-block;font-size:0.72rem;padding:7px 16px;border-radius:14px;border:1px solid #C97C56;color:#C97C56;letter-spacing:0.02em;}
 
-/* ============ MY COURSES ============ */
+.expand-panel{max-width:980px;margin:30px auto 0;display:none;}
+.expand-panel.open{display:block;animation:slideDown 0.25s ease;}
+@keyframes slideDown{from{opacity:0;transform:translateY(-8px);}to{opacity:1;transform:translateY(0);}}
+.expand-panel .panel-inner{background:#fffdfa;border-radius:8px;padding:26px 28px;box-shadow:0 12px 26px rgba(90,60,50,0.12);}
+.expand-panel h4{font-family:'Cormorant Garamond', serif;font-size:1.2rem;margin:0 0 16px;}
+.sub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+@media (max-width:700px){.sub-grid{grid-template-columns:1fr;}}
+.sub-card{border:1px solid rgba(74,52,42,0.1);border-radius:5px;padding:14px 16px;}
+.sub-card .sname{font-family:'Cormorant Garamond', serif;font-weight:600;font-size:0.95rem;margin-bottom:4px;}
+.sub-card .smeta{font-size:0.72rem;color:#8a7570;line-height:1.6;margin-bottom:8px;}
+.sub-card a{font-size:0.72rem;color:#C97C56;text-decoration:none;border-bottom:1px solid #C97C56;}
+/* NAYA COURSE (Learn Online sub-card) YAHAN ADD KAREN: sub-card block copy karke naam/meta/link badal dein */
+
 .mycourses-section{background:#EFDDE2;padding:56px 40px 70px;}
 .course-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;max-width:820px;margin:0 auto;}
 @media (max-width:700px){.course-grid{grid-template-columns:1fr;}}
 .course-card{background:#fffdfa;border-radius:6px;padding:22px 22px 24px;box-shadow:0 8px 20px rgba(90,60,50,0.1);position:relative;}
-.course-card .tag{
-  display:inline-block;font-size:0.65rem;letter-spacing:0.04em;text-transform:uppercase;
-  padding:3px 10px;border-radius:10px;margin-bottom:10px;
-}
+.course-card .tag{display:inline-block;font-size:0.65rem;letter-spacing:0.04em;text-transform:uppercase;padding:3px 10px;border-radius:10px;margin-bottom:10px;}
 .tag.free{background:#DCE9DC;color:#3d6b45;}
 .tag.paid{background:#F3DCC9;color:#a8563c;}
 .course-card h3{font-family:'Cormorant Garamond', serif;font-weight:600;font-size:1.15rem;margin:0 0 8px;}
 .course-card .meta{font-size:0.78rem;color:#8a7570;line-height:1.7;margin-bottom:12px;}
 .course-card .seats{font-size:0.78rem;color:#9C6B7A;font-weight:500;margin-bottom:14px;}
-.course-card a.reg-btn{
-  display:inline-block;background:#9C6B7A;color:#FBF3E7;
-  padding:9px 20px;border-radius:3px;text-decoration:none;font-size:0.78rem;letter-spacing:0.03em;
-}
+.course-card a.reg-btn{display:inline-block;background:#9C6B7A;color:#FBF3E7;padding:9px 20px;border-radius:3px;text-decoration:none;font-size:0.78rem;letter-spacing:0.03em;}
+/* NAYA COURSE (My Courses card) YAHAN ADD KAREN: course-card block copy karke details badal dein */
 
-/* ============ ISLAHI POSTS ============ */
 .islahi-section{background:#FBF3E7;padding:56px 40px 70px;}
 .islahi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:980px;margin:0 auto;}
 @media (max-width:820px){.islahi-grid{grid-template-columns:repeat(2,1fr);}}
 .islahi-card{background:#fffdfa;padding:10px 10px 16px;box-shadow:0 8px 18px rgba(90,60,50,0.1);}
 .islahi-card:nth-child(odd){transform:rotate(-1.5deg);}
 .islahi-card:nth-child(even){transform:rotate(1.2deg);}
-.islahi-img{
-  aspect-ratio:1/1;
-  background:repeating-linear-gradient(45deg, rgba(156,107,122,0.1) 0 10px, rgba(201,124,86,0.1) 10px 20px);
-  border:1px dashed #C97C56;
-  display:flex;align-items:center;justify-content:center;
-  font-size:0.68rem;color:#9C6B7A;text-align:center;padding:10px;
-  margin-bottom:8px;
-}
+.islahi-img{aspect-ratio:1/1;background:repeating-linear-gradient(45deg, rgba(156,107,122,0.1) 0 10px, rgba(201,124,86,0.1) 10px 20px);border:1px dashed #C97C56;display:flex;align-items:center;justify-content:center;font-size:0.68rem;color:#9C6B7A;text-align:center;padding:10px;margin-bottom:8px;}
+.islahi-img img{width:100%;height:100%;object-fit:cover;}
 .islahi-cap{font-family:'Caveat', cursive;font-size:0.95rem;text-align:center;color:#8a7570;}
+/* NAYA ISLAHI POST YAHAN ADD KAREN: islahi-card block copy karke image path aur caption badal dein */
 
-/* ============ QUIZZES ============ */
 .quiz-section{background:#F3E4DD;padding:56px 40px 70px;}
 .quiz-list{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
-.quiz-row{
-  background:#fffdfa;padding:14px 20px;border-radius:5px;
-  display:flex;align-items:center;justify-content:space-between;
-  box-shadow:0 6px 14px rgba(90,60,50,0.08);
-}
+.quiz-row{background:#fffdfa;padding:14px 20px;border-radius:5px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 6px 14px rgba(90,60,50,0.08);}
 .quiz-row .qname{font-family:'Cormorant Garamond', serif;font-weight:600;font-size:1rem;}
 .quiz-row .qtopic{font-size:0.75rem;color:#8a7570;}
-.quiz-row a.quiz-btn{
-  background:#C97C56;color:#FBF3E7;padding:8px 16px;border-radius:3px;
-  text-decoration:none;font-size:0.75rem;white-space:nowrap;
-}
+.quiz-row a.quiz-btn{background:#C97C56;color:#FBF3E7;padding:8px 16px;border-radius:3px;text-decoration:none;font-size:0.75rem;white-space:nowrap;}
+/* NAYA QUIZ YAHAN ADD KAREN: quiz-row block copy karke naam/topic/link badal dein */
 
-/* ============ LIBRARY ============ */
 .library-section{background:#4A342A;padding:56px 40px 70px;color:#F3E4DD;}
 .library-section .section-title,.library-section .section-sub{color:#F3E4DD;}
 .library-section .section-sub{color:#c9b8ae;}
 .lib-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:820px;margin:0 auto;}
 @media (max-width:700px){.lib-grid{grid-template-columns:1fr;}}
-.lib-card{
-  background:rgba(251,243,231,0.06);
-  border:1px solid rgba(251,243,231,0.15);
-  border-radius:5px;padding:18px 20px;
-}
+.lib-card{background:rgba(251,243,231,0.06);border:1px solid rgba(251,243,231,0.15);border-radius:5px;padding:18px 20px;}
 .lib-card h4{font-family:'Cormorant Garamond', serif;font-size:1.05rem;margin:0 0 6px;color:#F3E4DD;}
 .lib-card p{font-size:0.78rem;color:#c9b8ae;margin:0 0 12px;line-height:1.6;}
 .lib-card a{color:#e8b98f;font-size:0.78rem;text-decoration:none;border-bottom:1px solid #e8b98f;}
 
-/* ============ FOOTER ============ */
 footer{background:#3a281f;padding:40px 40px;text-align:center;color:#c9b8ae;}
 footer .word{font-family:'Cairo', sans-serif;font-size:1.1rem;color:#F3E4DD;margin-bottom:12px;}
 .footer-icons{display:flex;gap:18px;justify-content:center;margin-bottom:14px;}
 .footer-icons a{color:#e8b98f;font-size:0.8rem;text-decoration:none;border-bottom:1px solid #e8b98f;}
 footer .copy{font-size:0.7rem;opacity:0.7;}
+
+
+/* ================= MOBILE RESPONSIVENESS ================= */
+@media (max-width:600px){
+  header{padding:14px 18px;flex-wrap:wrap;gap:10px;justify-content:center;}
+  .logo-row img{height:36px;}
+  .logo-row .word{font-size:0.95rem;}
+  nav{gap:12px;justify-content:center;width:100%;}
+  nav a{font-size:0.72rem;}
+
+  .hero{padding:44px 20px 40px;}
+  .hero .eyebrow{font-size:1.1rem;}
+  .hero .arabic{font-size:1.1rem;}
+  .hero p.tag{font-size:0.85rem;}
+  .cta-btn{padding:10px 24px;font-size:0.8rem;}
+
+  .section-title{font-size:1.4rem;}
+  .section-sub{font-size:0.76rem;padding:0 10px;}
+
+  .updates-section,.learn-section,.mycourses-section,.islahi-section,.quiz-section,.library-section{
+    padding:38px 18px 46px;
+  }
+  .updates-row{gap:14px;}
+  .note-card{width:100%;max-width:320px;}
+
+  .cat-grid{grid-template-columns:1fr;gap:16px;}
+  .course-grid{grid-template-columns:1fr;gap:16px;}
+  .islahi-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .lib-grid{grid-template-columns:1fr;}
+  .sub-grid{grid-template-columns:1fr;}
+
+  .expand-panel .panel-inner{padding:18px 16px;}
+
+  .popup{width:280px;padding:14px 14px 18px;}
+  .popup h3{font-size:1.05rem;}
+
+  footer{padding:32px 18px;}
+  .footer-icons{flex-wrap:wrap;gap:12px;}
+}
+
+@media (max-width:380px){
+  .hero h1{font-size:1.6rem;}
+  nav a{font-size:0.68rem;}
+}
+
 </style>
 </head>
 <body>
 
-<!-- ============ POPUP ============ -->
 <div class="overlay" id="popupOverlay">
   <div class="popup">
     <div class="tape"></div>
     <button class="close-btn" onclick="document.getElementById('popupOverlay').classList.add('hidden')">✕</button>
-    <div class="poster">[ naye course ka poster yahan lagayen — image ]</div>
+    <!-- POPUP IMAGE YAHAN: <img src="images/course-poster.jpg" style="width:100%;display:block;margin-bottom:14px;"> -->
+    <div class="poster">[ images/course-poster.jpg yahan lagegi ]</div>
     <h3>Tasheeh Surah Al-Kahf</h3>
     <a class="register-btn" href="LINK_HERE">Register Now</a>
   </div>
@@ -234,7 +200,8 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
   <span class="eyebrow">ek mamooli talibah</span>
   <h1>Mukhlisa Muneer <em>(Ummu Anas)</em></h1>
   <div class="arabic">طویلبۃ العلم</div>
-  <p class="tag">Noor ul Hidayah — Islamic education initiative for digital literacy and deen ka ilm, ek dosti bhare andaz mein.</p>
+  <p class="tag" style="font-size:1.05rem;font-family:'Cormorant Garamond',serif;direction:rtl;color:#4A342A;margin-bottom:6px;">منہج سلف پر قائم خواتین اور بچوں کے لیے دینی و عصری تعلیم کا آن لائن ادارہ</p>
+  <p class="tag" style="font-style:italic;">An online institute providing religious and contemporary education for women and children, upon the manhaj of the Salaf.</p>
   <a class="cta-btn" href="#learn">Explore courses</a>
 </section>
 
@@ -244,9 +211,10 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
   <h2 class="section-title">new updates</h2>
   <p class="section-sub">idara se taaza khabrein</p>
   <div class="updates-row">
+    <div class="note-card"><div class="pin"></div><span class="date">18 July</span>Is Saturday, Mubasshira Falak sahiba <b>"Murab aur Mabni"</b> ke unwan par ek khaas grammar session lengi.</div>
     <div class="note-card"><div class="pin"></div><span class="date">24 July</span>Tasheeh Surah Al-Kahf shuru ho rahi hai — Fri &amp; Sat, 7:45–8:15 PM, bilkul free!</div>
-    <div class="note-card"><div class="pin"></div><span class="date">16 July</span>Digital Safar Session 6 ki registration khul gayi hai.</div>
-    <div class="note-card"><div class="pin"></div><span class="date">10 July</span>Al-Wajeez flashcard series ka naya card WhatsApp channel par post ho gaya.</div>
+    <div class="note-card"><div class="pin"></div><span class="date">Coming up</span>Digital Safar ka agla session — mobile par video editing, is baar ek naye <b>podcast-style</b> discussion format mein!</div>
+    <div class="note-card"><div class="pin"></div><span class="date">Monday se</span><b>Quranic Arabic Grammar Course</b> shuru hone wala hai — registrations open hain!</div>
   </div>
 </section>
 
@@ -254,51 +222,55 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
 
 <section class="learn-section" id="learn">
   <h2 class="section-title">learn online</h2>
-  <p class="section-sub">choose a path — click any category for details and registration</p>
-  <div class="cat-grid">
+  <p class="section-sub">click any category — details will open right below</p>
+  <div class="cat-grid" id="catGrid">
 
-    <div class="cat-card">
+    <div class="cat-card" data-cat="hifz" onclick="toggleCat('hifz', this)">
       <svg class="motif" viewBox="0 0 40 40"><path d="M20 4c-6 4-6 10 0 14 6-4 6-10 0-14z" fill="#9C6B7A" opacity="0.7"/><circle cx="20" cy="30" r="3" fill="#C97C56"/></svg>
       <h3>Masjid Nabvi Hifz al-Qur'an wal Mutoon</h3>
-      <p>Free hifz &amp; mutoon halaqat, Masjid Nabvi ki taraf se — dunya bhar se koi bhi join kar sakta hai.</p>
-      <a class="pill" href="LINK_HERE">Registration guide</a>
+      <p>Free hifz &amp; mutoon halaqat, dunya bhar se koi bhi join kar sakta hai.</p>
+      <span class="pill">View details</span>
     </div>
 
-    <div class="cat-card">
+    <div class="cat-card" data-cat="alimiyat" onclick="toggleCat('alimiyat', this)">
       <svg class="motif" viewBox="0 0 40 40"><path d="M8 30 Q20 6 32 30" stroke="#9C6B7A" stroke-width="2" fill="none" opacity="0.7"/><circle cx="20" cy="14" r="3" fill="#C97C56"/></svg>
       <h3>Online Alimiyat</h3>
-      <p>Markaz Tuba — 3-saala course, daily live classes, Saturday anjuman ke saath.</p>
-      <a class="pill" href="LINK_HERE">Course details</a>
+      <p>Markaz Tuba — 3-saala course, daily live classes.</p>
+      <span class="pill">View details</span>
     </div>
 
-    <div class="cat-card">
+    <div class="cat-card" data-cat="arabic" onclick="toggleCat('arabic', this)">
       <svg class="motif" viewBox="0 0 40 40"><rect x="10" y="10" width="20" height="20" rx="3" fill="none" stroke="#9C6B7A" stroke-width="2" opacity="0.7"/><path d="M14 20h12M20 14v12" stroke="#C97C56" stroke-width="1.5"/></svg>
       <h3>Arabic Grammar Courses</h3>
-      <p>Markaz Ibn Abbas ke zariye — Nahw, Sarf, Duroos ul Lughah aur Spoken Arabic.</p>
-      <a class="pill" href="LINK_HERE">View courses</a>
+      <p>Markaz Ibn Abbas ke zariye multiple courses.</p>
+      <span class="pill">View courses</span>
     </div>
 
-    <div class="cat-card">
+    <div class="cat-card" data-cat="tajweed" onclick="toggleCat('tajweed', this)">
       <svg class="motif" viewBox="0 0 40 40"><path d="M10 25 Q20 8 30 25" stroke="#9C6B7A" stroke-width="2" fill="none" opacity="0.7"/><circle cx="14" cy="27" r="2" fill="#C97C56"/><circle cx="26" cy="27" r="2" fill="#C97C56"/></svg>
       <h3>Tajweed Courses</h3>
-      <p>Sahih makhaarij aur qawaid-e-tajweed ke sath Qur'an ki tilawat.</p>
-      <a class="pill" href="LINK_HERE">Course details</a>
+      <p>Sahih makhaarij aur qawaid-e-tajweed ke sath.</p>
+      <span class="pill">View details</span>
     </div>
 
-    <div class="cat-card">
+    <div class="cat-card" data-cat="kids" onclick="toggleCat('kids', this)">
       <svg class="motif" viewBox="0 0 40 40"><circle cx="20" cy="20" r="10" fill="none" stroke="#9C6B7A" stroke-width="2" opacity="0.7"/><path d="M20 14v6l4 3" stroke="#C97C56" stroke-width="1.5" fill="none"/></svg>
       <h3>Courses for Kids</h3>
-      <p>Bachon ke liye asaan aur dilchasp Islamic taleem ke courses.</p>
-      <a class="pill" href="LINK_HERE">View courses</a>
+      <p>Bachon ke liye asaan Islamic taleem.</p>
+      <span class="pill">View courses</span>
     </div>
 
-    <div class="cat-card">
+    <div class="cat-card" data-cat="tech" onclick="toggleCat('tech', this)">
       <svg class="motif" viewBox="0 0 40 40"><rect x="9" y="12" width="22" height="16" rx="2" fill="none" stroke="#9C6B7A" stroke-width="2" opacity="0.7"/><path d="M15 28h10" stroke="#C97C56" stroke-width="1.5"/></svg>
       <h3>Tech Courses</h3>
-      <p>Harvard aur dusri universities ke free/paid online tech courses.</p>
-      <a class="pill" href="LINK_HERE">View courses</a>
+      <p>Harvard aur dusri universities ke courses.</p>
+      <span class="pill">View courses</span>
     </div>
 
+  </div>
+
+  <div class="expand-panel" id="expandPanel">
+    <div class="panel-inner" id="panelInner"></div>
   </div>
 </section>
 
@@ -312,7 +284,7 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
     <div class="course-card">
       <span class="tag paid">Paid</span>
       <h3>Qaidah Course — Tajweed Correction</h3>
-      <div class="meta">4:00–4:45 PM &middot; 3 months<br>₹700/month + ₹200 registration</div>
+      <div class="meta">4:00–4:45 PM &middot; 3 months<br>Boys: 7–11 years &middot; Girls: no age limit<br>For those who have studied Qaidah before, revising for tajweed correction<br>₹700/month + ₹200 registration</div>
       <div class="seats">3 seats available</div>
       <a class="reg-btn" href="LINK_HERE">Register</a>
     </div>
@@ -320,7 +292,7 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
     <div class="course-card">
       <span class="tag paid">Paid</span>
       <h3>Beginners — Huroof &amp; Harakaat</h3>
-      <div class="meta">8:00–8:45 PM &middot; Duration TBD<br>₹700/month + ₹200 registration</div>
+      <div class="meta">8:00–8:45 PM &middot; Mon–Thu<br>Age: 5–7 years<br>For those who have not studied Qaidah before<br>₹700/month + ₹200 registration</div>
       <div class="seats">Seats: contact to check</div>
       <a class="reg-btn" href="LINK_HERE">Register</a>
     </div>
@@ -329,6 +301,14 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
       <span class="tag free">Free</span>
       <h3>Tasheeh Surah Al-Kahf</h3>
       <div class="meta">Fri &amp; Sat, 7:45–8:15 PM<br>Starting 24 July 2026</div>
+      <div class="seats">Open to all</div>
+      <a class="reg-btn" href="LINK_HERE">Join</a>
+    </div>
+
+    <div class="course-card">
+      <span class="tag free">Free</span>
+      <h3>Murab o Mabni — Saturday Grammar Session</h3>
+      <div class="meta">Saturdays &middot; time TBD<br>By Mubasshira Falak</div>
       <div class="seats">Open to all</div>
       <a class="reg-btn" href="LINK_HERE">Join</a>
     </div>
@@ -346,16 +326,19 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
 
 <div class="torn"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,10 Q30,35 60,12 T120,15 T180,8 T240,18 T300,10 T360,20 T420,6 T480,16 T540,10 T600,22 T660,8 T720,15 T780,10 T840,18 T900,6 T960,16 T1020,10 T1080,20 T1140,8 T1200,15 L1200,0 L0,0 Z" fill="#FBF3E7"/></svg></div>
 
+<!--
+ISLAHI POSTS SECTION — FILHAL HIDDEN, ZAROORAT PADNE PAR NEECHE SE UNCOMMENT KAREN
 <section class="islahi-section" id="islahi">
   <h2 class="section-title">islahi posts</h2>
-  <p class="section-sub">designed graphics &amp; reminders</p>
+  <p class="section-sub">designed graphics &amp; reminders — images repo ke images/islahi/ folder se aayengi</p>
   <div class="islahi-grid">
-    <div class="islahi-card"><div class="islahi-img">[graphic 1]</div><div class="islahi-cap">post title</div></div>
-    <div class="islahi-card"><div class="islahi-img">[graphic 2]</div><div class="islahi-cap">post title</div></div>
-    <div class="islahi-card"><div class="islahi-img">[graphic 3]</div><div class="islahi-cap">post title</div></div>
-    <div class="islahi-card"><div class="islahi-img">[graphic 4]</div><div class="islahi-cap">post title</div></div>
+    <div class="islahi-card"><div class="islahi-img">[images/islahi/post1.jpg]</div><div class="islahi-cap">post title</div></div>
+    <div class="islahi-card"><div class="islahi-img">[images/islahi/post2.jpg]</div><div class="islahi-cap">post title</div></div>
+    <div class="islahi-card"><div class="islahi-img">[images/islahi/post3.jpg]</div><div class="islahi-cap">post title</div></div>
+    <div class="islahi-card"><div class="islahi-img">[images/islahi/post4.jpg]</div><div class="islahi-cap">post title</div></div>
   </div>
 </section>
+-->
 
 <div class="torn"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,10 Q30,35 60,12 T120,15 T180,8 T240,18 T300,10 T360,20 T420,6 T480,16 T540,10 T600,22 T660,8 T720,15 T780,10 T840,18 T900,6 T960,16 T1020,10 T1080,20 T1140,8 T1200,15 L1200,0 L0,0 Z" fill="#F3E4DD"/></svg></div>
 
@@ -363,8 +346,7 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
   <h2 class="section-title">quizzes</h2>
   <p class="section-sub">test yourself — Google Form MCQs</p>
   <div class="quiz-list">
-    <div class="quiz-row"><div><div class="qname">Ajrumiyyah Week 3</div><div class="qtopic">Arabic Grammar</div></div><a class="quiz-btn" href="LINK_HERE">Start Quiz</a></div>
-    <div class="quiz-row"><div><div class="qname">Al-Wajeez — Set 1</div><div class="qtopic">Fiqh</div></div><a class="quiz-btn" href="LINK_HERE">Start Quiz</a></div>
+    <div class="quiz-row" style="justify-content:center;"><div class="qname" style="font-style:italic;color:#8a7570;">Quizzes will be added soon, in shaa Allah</div></div>
   </div>
 </section>
 
@@ -374,8 +356,7 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
   <h2 class="section-title">noor ul hidayah library</h2>
   <p class="section-sub">notes &amp; PDFs, alag alag categories mein</p>
   <div class="lib-grid">
-    <div class="lib-card"><h4>Sharh Al-Ajrumiyyah</h4><p>Arabic grammar notes, 45+ click-to-reveal Urdu translation cards.</p><a href="LINK_HERE">View on website</a></div>
-    <div class="lib-card"><h4>Al-Wajeez fi Fiqh As-Sunnah</h4><p>Flashcard series ke ilmi points, Roman + Urdu script combined.</p><a href="LINK_HERE">Download PDF</a></div>
+    <div class="lib-card" style="text-align:center;grid-column:1/-1;"><p style="font-style:italic;">Library will be added soon, in shaa Allah</p></div>
   </div>
 </section>
 
@@ -383,11 +364,81 @@ footer .copy{font-size:0.7rem;opacity:0.7;}
   <div class="word">نور الهداية</div>
   <div class="footer-icons">
     <a href="LINK_HERE">WhatsApp</a>
-    <a href="LINK_HERE">Instagram</a>
-    <a href="LINK_HERE">Email</a>
+    <a href="mailto:ummuanas789@gmail.com">Email</a>
   </div>
   <div class="copy">© Noor ul Hidayah — Mukhlisa Muneer (Ummu Anas)</div>
 </footer>
+
+<script>
+const catData = {
+  hifz: {
+    title: "Masjid Nabvi Hifz al-Qur'an wal Mutoon — Registration Guide",
+    subs: [
+      {name:"Step-by-step registration", meta:"reg.qm.edu.sa par New Registration → form bharen → login karen", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."},
+      {name:"Support / Help Desk", meta:"Kisi bhi query ke liye help.qm.edu.sa", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."}
+    ]
+  },
+  alimiyat: {
+    title: "Online Alimiyat — Markaz Tuba",
+    subs: [
+      {name:"3-Saala Alimiyat Course", meta:"6 semesters, daily live classes Mon-Thu, Sat anjuman", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."},
+      {name:"Contact for admission", meta:"Janab Atif Iqbal Sahab — +91 70046 36832", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."}
+    ]
+  },
+  arabic: {
+    title: "Arabic Grammar Courses — Markaz Ibn Abbas",
+    subs: [
+      {name:"Quranic Arabic Course (Level 1)", meta:"4 months, Daily 4:45-5:30 PM IST, ₹500/mo", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."},
+      {name:"Duroos ul Lughah (Book 2)", meta:"3 months, Daily 3:00-3:50 PM IST, ₹600/mo", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."},
+      {name:"Spoken Arabic Course", meta:"Ongoing, Mon-Thu 7:30-8:15 PM, ₹700/mo + ₹200 reg", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."},
+      {name:"Grammar Level 1/2/3", meta:"Mirqaat ul Qawaid, various time slots", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."}
+    ]
+  },
+  tajweed: {
+    title: "Tajweed Courses",
+    subs: [
+      {name:"Course details coming soon", meta:"Yahan tajweed course ki details add karen", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."}
+    ]
+  },
+  kids: {
+    title: "Courses for Kids",
+    subs: [
+      {name:"Course details coming soon", meta:"Yahan kids course ki details add karen", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."}
+    ]
+  },
+  tech: {
+    title: "Tech Courses",
+    subs: [
+      {name:"Course details coming soon", meta:"Yahan Harvard/other tech courses add karen", link:"https://wa.me/PHONE_NUMBER_HERE?text=Assalaamu%20alaikum%20wa%20rahmatullahi%20wa%20barakaatuh%2C%20mujhe%20is%20course%20ke%20baare%20mein%20maloomat%20chahiye."}
+    ]
+  }
+};
+
+let currentOpen = null;
+function toggleCat(key, el){
+  const panel = document.getElementById('expandPanel');
+  const inner = document.getElementById('panelInner');
+  document.querySelectorAll('.cat-card').forEach(c => c.classList.remove('active'));
+
+  if(currentOpen === key){
+    panel.classList.remove('open');
+    currentOpen = null;
+    return;
+  }
+  el.classList.add('active');
+  const d = catData[key];
+  let subsHtml = d.subs.map(s => `
+    <div class="sub-card">
+      <div class="sname">${s.name}</div>
+      <div class="smeta">${s.meta}</div>
+      <a href="${s.link}">Details / Register &rarr;</a>
+    </div>`).join('');
+  inner.innerHTML = `<h4>${d.title}</h4><div class="sub-grid">${subsHtml}</div>`;
+  panel.classList.add('open');
+  currentOpen = key;
+  panel.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+</script>
 
 </body>
 </html>
